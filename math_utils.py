@@ -1,7 +1,7 @@
 def factorial(n):
-    """Обчислення факторіалу числа"""
+    """Обчислення факторіалу нашого числа"""
     if n < 0:
-        raise ValueError("Факторіал не визначений для від’ємних чисел")
+        raise ValueError("Факторіал не визначений для від’ємних наших чисел")
     result = 1
     for i in range(1, n + 1):
         result *= i
@@ -9,7 +9,7 @@ def factorial(n):
 
 
 def average(numbers):
-    """Повертає середнє арифметичне списку чисел"""
+    """Повертає середнє арифметичне списку наших чисел"""
     if not numbers:
-        raise ValueError("Список не може бути порожнім")
+        raise ValueError("Список не може бути порожнім!")
     return sum(numbers) / len(numbers)
